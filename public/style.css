@@ -1,25 +1,35 @@
 .gradient {
-    background: linear-gradient(-45deg, #c6ffdd, #fbd786, #f7797d);
-    background-size: 400% 400%;
-    background-position: 0% 50%;
-    animation: gradient 8s ease-in-out infinite;
+  background: linear-gradient(-45deg, #c6ffdd, #fbd786, #f7797d);
+  background-size: 400% 400%;
+  background-position: 0% 50%;
+  animation: gradient 8s ease-in-out infinite;
 }
 
 .gradient-invert {
-    background: linear-gradient(-45deg, #f7797d, #fbd786, #c6ffdd);
-    background-size: 400% 400%;
-    background-position: 0% 50%;
-    animation: gradient 8s ease-in-out infinite;
+  background: linear-gradient(-45deg, #f7797d, #fbd786, #c6ffdd);
+  background-size: 400% 400%;
+  background-position: 0% 50%;
+  animation: gradient 8s ease-in-out infinite;
+}
+
+.link-dark {
+  color: var(--bs-gray-700) !important;
+  transition: all 100ms ease-in-out !important;
+}
+
+.link-dark:hover {
+  color: var(--bs-blue) !important;
+  transition: all 100ms ease-in-out !important;
 }
 
 @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
   }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
